@@ -1,0 +1,29 @@
+# --- 系统/编辑器 ---
+.DS_Store
+Thumbs.db
+*.swp
+~$*
+
+# --- 飞书 lark-doc 本地中间稿（可重新拉取，不入库） ---
+draft_*_folder/
+
+# --- 超长图临时切段（可由原图用脚本重新生成） ---
+_seg/
+**/_seg/
+
+# --- 凭证与明文密钥（绝不入库；本项目统一走全局 secrets） ---
+.secrets/*.json
+.secrets/*.txt
+.secrets/*.raw
+.secrets/*.key
+.secrets/*.pem
+*.pem
+*.key
+.env
+.env.*
+!*.enc
+
+# --- 临时/导出缓存 ---
+*.tmp
+*.crdownload
+__pycache__/
